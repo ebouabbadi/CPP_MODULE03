@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/12/27 17:32:59 by ebouabba          #+#    #+#              #
+#    Updated: 2022/12/27 17:32:59 by ebouabba         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = ClapTrap
 
 SRC = main.cpp ClapTrap.cpp
@@ -8,7 +20,7 @@ CPP = c++
 
 RM = rm -f
 
-CPPFLAGS = #-Wall -Wextra -Werror -std=c++98
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 all : $(NAME)
 

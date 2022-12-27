@@ -1,17 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/27 17:33:12 by ebouabba          #+#    #+#             */
+/*   Updated: 2022/12/27 17:33:12 by ebouabba         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    ClapTrap m("mehdi");
-    ClapTrap b("badr");
-    ClapTrap s("simo");
-    m.attack("attay");
-    b.attack("albarad");
-    s.attack("atanjia");
-    m.takeDamage(5);
-    b.takeDamage(9);
-    s.takeDamage(10);
-    m.beRepaired(10);
-    m.takeDamage(19);
+    ScavTrap c1;
+    c1.attack("show");
     return 0;
 }
