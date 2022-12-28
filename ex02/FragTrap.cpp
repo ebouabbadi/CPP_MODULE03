@@ -6,7 +6,7 @@
 /*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 17:33:33 by ebouabba          #+#    #+#             */
-/*   Updated: 2022/12/28 13:03:20 by ebouabba         ###   ########.fr       */
+/*   Updated: 2022/12/28 13:30:51 by ebouabba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ FragTrap::~FragTrap()
 }
 void FragTrap::attack(const std::string &target)
 {
-    if (this->_Energy_points > 0)
+    if (this->_Energy_points > 0 && this->_Hit_points)
     {
         std::cout << "FragTrap " << this->name << " attacks " << target << " causing " << this->_Attac_damage << " points of damage!" << std::endl;
         this->_Energy_points--;

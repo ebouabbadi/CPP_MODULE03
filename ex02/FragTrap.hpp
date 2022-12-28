@@ -6,7 +6,7 @@
 /*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 17:33:36 by ebouabba          #+#    #+#             */
-/*   Updated: 2022/12/27 18:53:17 by ebouabba         ###   ########.fr       */
+/*   Updated: 2022/12/28 15:11:06 by ebouabba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define FRAGTRAP_HPP
 
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 class FragTrap : public ClapTrap
 {

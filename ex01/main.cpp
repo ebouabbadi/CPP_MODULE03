@@ -20,6 +20,7 @@ int main()
     c1.attack("attay");
     s2.attack("albarad");
     c1.takeDamage(5);
+    s2.
     s2.takeDamage(9);
     c1.beRepaired(10);
     s2.takeDamage(19);
