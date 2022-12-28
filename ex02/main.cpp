@@ -12,10 +12,20 @@
 
 #include "ClapTrap.hpp"
 #include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    FragTrap f1;
-    f1.attack("show");
-    return 0;
+    ClapTrap c1("jim");
+    ScavTrap s2("mehdi");
+    FragTrap f1("bar9alo");
+    c1.attack("attay");
+    s2.attack("albarad");
+    f1.attack("kobnhagn");
+    c1.takeDamage(5);
+    s2.takeDamage(9);
+    f1.beRepaired(20);
+    c1.beRepaired(10);
+    s2.takeDamage(19);
+    return (0);
 }

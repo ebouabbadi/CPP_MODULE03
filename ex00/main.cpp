@@ -14,16 +14,16 @@
 
 int main()
 {
-    ClapTrap m("mehdi");
-    ClapTrap b("badr");
-    ClapTrap s("simo");
-    m.attack("attay");
-    b.attack("albarad");
-    s.attack("atanjia");
-    m.takeDamage(5);
-    b.takeDamage(9);
-    s.takeDamage(10);
-    m.beRepaired(10);
-    m.takeDamage(19);
+    ClapTrap c1("jim");
+    ClapTrap c2("mehdi");
+    ClapTrap c3("simo");
+    c1.attack("attay");
+    c2.attack("albarad");
+    c3.attack("atanjia");
+    c1.takeDamage(5);
+    c2.takeDamage(9);
+    c3.takeDamage(10);
+    c1.beRepaired(10);
+    c3.takeDamage(19);
     return 0;
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/27 17:33:50 by ebouabba          #+#    #+#             */
-/*   Updated: 2022/12/27 17:33:51 by ebouabba         ###   ########.fr       */
+/*   Created: 2022/12/27 17:33:22 by ebouabba          #+#    #+#             */
+/*   Updated: 2022/12/27 18:39:19 by ebouabba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,13 @@
 class ScavTrap : public ClapTrap
 {
 public:
-    ScavTrap();
-    ScavTrap(std::string name);
+    ScavTrap();                             /*Default constructor*/
+    ScavTrap(std::string name);             /*parammeters constructor*/
+    ScavTrap(const ScavTrap &copy);         /*copy constructor*/
+    ScavTrap &operator=(const ScavTrap &C); /*copy asigemment operator*/
+    ~ScavTrap();                            /*Destructor*/
     void attack(const std::string &target);
     void guardGate();
-    ~ScavTrap();
 };
 
 #endif

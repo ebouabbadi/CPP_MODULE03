@@ -15,7 +15,13 @@
 
 int main()
 {
-    ScavTrap c1;
-    c1.attack("show");
-    return 0;
+    ClapTrap c1("jim");
+    ScavTrap s2("mehdi");
+    c1.attack("attay");
+    s2.attack("albarad");
+    c1.takeDamage(5);
+    s2.takeDamage(9);
+    c1.beRepaired(10);
+    s2.takeDamage(19);
+    return (0);
 }

@@ -14,7 +14,7 @@
 
 class ClapTrap
 {
-private:
+protected:
     std::string name;
     int _Hit_points;
     int _Energy_points;

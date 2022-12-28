@@ -6,7 +6,7 @@
 /*   By: ebouabba <ebouabba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 17:33:36 by ebouabba          #+#    #+#             */
-/*   Updated: 2022/12/27 17:33:37 by ebouabba         ###   ########.fr       */
+/*   Updated: 2022/12/27 18:53:17 by ebouabba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@
 class FragTrap : public ClapTrap
 {
 public:
-    FragTrap();
-    FragTrap(std::string name);
-    ~FragTrap();
+    FragTrap();                             /*Default constructor*/
+    FragTrap(std::string name);             /*parammeters constructor*/
+    FragTrap(const FragTrap &copy);         /*copy constructor*/
+    FragTrap &operator=(const FragTrap &C); /*copy asigemment operator*/
+    ~FragTrap();                            /*Destructor*/
     void attack(const std::string &target);
     void highFivesGuys(void);
 };
